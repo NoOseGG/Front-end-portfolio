@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("./reset.css");
+
+:root {
+  /* width */
+  --container-width: 1664px;
+
+  /* colors */
+
+  --bg-main: #292f36;
+  --bg-1: #292f36;
+  --bg-2: #1a1e23;
+  --brand-1: #12f7d6;
+  --brand-2: #98faec;
+  --grey: #43454d;
+  --white: #ffffff;
+  --html: #e54f26;
+  --css: #0c73b8;
+  --js: #e7a020;
+  --react: #28a9e0;
+
+  /* font ubunty */
+  --bg-text-u: normal normal 400 137px/134px "Ubuntu", san-serif;
+  --h1-u: normal normal 400 64px/72px "Ubuntu", san-serif;
+  --h2-u: normal normal 400 32px/36px "Ubuntu", san-serif;
+  --button-u: normal normal 400 20px/24px "Ubuntu", san-serif;
+  --article-u: normal normal 300 16px/32px "Ubuntu", san-serif;
+  --para-u: normal normal 300 16px/18px "Ubuntu", san-serif;
+  --label-u-m: normal normal 500 14px/16px "Ubuntu", san-serif;
+  --label-u-l: normal normal 300 14px/16px "Ubuntu", san-serif;
+
+  /* font IBM flex mono */
+  --number-m: normal normal 500 48px/62px "IBM Plex Mono", san-serif;
+  --h2-m: normal normal 500 32px/42px "IBM Plex Mono", san-serif;
+  --logo-m: normal normal 500 32px/42px "IBM Plex Mono", san-serif;
+  --menu-m: normal normal 400 24px/32px "IBM Plex Mono", san-serif;
+  --media-m: normal normal 400 16px/20px "IBM Plex Mono", san-serif;
+  --para-m: normal normal 400 16px/20px "IBM Plex Mono", san-serif;
+  --code-m: normal normal 400 14px/18px "IBM Plex Mono", san-serif;
+}
+
+body {
+  background-color: var(--bg-main);
+  width: 100%;
+  min-height: 100vh;
+}
+
+path {
+  fill: var(--brand-1);
+}
+
+.header {
+  width: 100%;
+  height: 170px;
+}
+
+.container {
+  width: var(--container-width);
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--grey);
+}
+
+.logo {
+  display: flex;
+  gap: 8px;
+}
+
+.logo-icon {
+  font: var(--logo-m);
+  color: var(--brand-1);
+  cursor: pointer;
+}
+
+.logo-title {
+  font: var(--logo-m);
+  color: var(--white);
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font: var(--media-m);
+  color: var(--white);
+  gap: 8px;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Section hero */
+
+.hero-wrapper {
+  width: 100%;
+  height: 100%;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  font: var(--bg-text-u);
+  color: var(--brand-1);
+  text-align: center;
+}
+
+.hero-content {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 128px 128px;
+}
+
+/* hero card */
+
+.hero-card {
+  width: 320px;
+  height: 520px;
+  border: 3px solid var(--white);
+  border-top-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-card-avatar {
+  margin-top: 38px;
+  height: 96px;
+  width: 96px;
+}
+
+.hero-card-name {
+  font: var(--logo-m);
+  color: var(--white);
+}
+
+.hero-card-proffesion {
+  font: var(--code-m);
+  color: var(--white);
+}
+
+/* hero info */
+
+.hero-info {
+  width: 745px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero-tags {
+  font: var(--code-m);
+  color: var(--brand-2);
+}
+
+.hero-info-title {
+  padding-left: 16px;
+  font: var(--h1-u);
+  color: var(--white);
+}
+
+.hero-info-text {
+  padding-left: 16px;
+  font: var(--para-m);
+  color: var(--white);
+}
+
+.hero-info-name {
+  color: var(--brand-1);
+}
+
+.hero-info-send {
+  padding-left: 16px;
+  margin-top: 16px;
+  font: var(--h2-m);
+  color: var(--brand-1);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-info-send-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--grey);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* hero highlights */
+
+.hero-highlights {
+  width: 215px;
+  height: 378px;
+  padding: 48px 32px;
+  background-color: var(--bg-2);
+  color: var(--white);
+  border-radius: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-highlights-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-highlights-item span {
+  font: var(--number-m);
+  color: var(--brand-1);
+}
+
+.hero-highlights-item div {
+  font: var(--para-m);
+}
