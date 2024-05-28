@@ -135,12 +135,14 @@ path {
 .hero-card {
   width: 320px;
   height: 520px;
+  padding: 0 24px;
   border: 3px solid var(--white);
   border-top-left-radius: 150px;
   border-bottom-right-radius: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: -4px -4px 3px var(--brand-1);
 }
 
 .hero-card-avatar {
@@ -157,6 +159,58 @@ path {
 .hero-card-proffesion {
   font: var(--code-m);
   color: var(--white);
+}
+
+.hero-card-requisites {
+  margin-top: 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-card-requisites-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font: var(--code-m);
+  color: var(--white);
+}
+
+.hero-card-requisites div {
+  width: 14px;
+  height: 14px;
+}
+
+.hero-card-tags {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+
+.hero-card-tags-item {
+  background-color: var(--brand-1);
+  padding: 0 8px;
+  font: var(--code-m);
+  border-radius: 8px;
+}
+
+.hero-card-button-download {
+  margin-top: 32px;
+  padding: 16px 32px;
+  display: flex;
+  gap: 16px;
+  font: var(--button-u);
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 32px;
+}
+
+.hero-card-button-download path {
+  fill: #000
 }
 
 /* hero info */
