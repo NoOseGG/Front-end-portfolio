@@ -4,22 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Svirydzenka portfolio</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-wrapper">
+        <div class="header__inner">
           <div class="logo">
-            <div class="logo-icon">&lt;JS/&gt;</div>
-            <div class="logo-title">YurySvirydzenka</div>
+            <div class="logo__icon">&lt;JS/&gt;</div>
+            <div class="logo__title">YurySvirydzenka</div>
           </div>
 
           <menu class="menu">
-            <ul class="menu-list">
-              <li class="menu-item">
-                <a class="menu-link" href="#">
-                  <div class="menu-icon">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  <div class="menu__icon">
                     <svg
                       width="24"
                       height="24"
@@ -48,9 +49,9 @@
                   Instagram
                 </a>
               </li>
-              <li class="menu-item">
-                <a class="menu-link" href="#">
-                  <div class="menu-icon">
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  <div class="menu__icon">
                     <svg
                       width="24"
                       height="24"
@@ -81,9 +82,9 @@
                   LinkedIn
                 </a>
               </li>
-              <li class="menu-item">
-                <a class="menu-link" href="#">
-                  <div class="menu-icon">
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  <div class="menu__icon">
                     <svg
                       width="24"
                       height="24"
@@ -108,20 +109,20 @@
 
     <section class="hero">
       <div class="container">
-        <div class="hero-wrapper">
-          <h1 class="hero-title">Developer</h1>
-          <div class="hero-content">
-            <div class="hero-card">
+        <div class="hero__inner">
+          <h1 class="hero__title">Developer</h1>
+          <div class="hero__content">
+            <div class="hero__card">
               <img
                 src="./images/profile-photo.png"
                 alt="avatar"
-                class="hero-card-avatar"
+                class="hero__card-avatar"
               />
-              <div class="hero-card-name">Yury</div>
-              <div class="hero-card-proffesion">Front-end developer</div>
+              <div class="hero__card-name">Yury</div>
+              <div class="hero__card-proffesion">Front-end developer</div>
 
-              <ul class="hero-card-requisites">
-                <li class="hero-card-requisites-item">
+              <ul class="hero__card-requisites">
+                <li class="hero__card-requisites-item">
                   <div>
                     <svg
                       width="24"
@@ -140,7 +141,7 @@
                   </div>
                   hoc751@gmail.com
                 </li>
-                <li class="hero-card-requisites-item">
+                <li class="hero__card-requisites-item">
                   <div>
                     <svg
                       width="24"
@@ -165,7 +166,7 @@
                   </div>
                   Belarus
                 </li>
-                <li class="hero-card-requisites-item">
+                <li class="hero__card-requisites-item">
                   <div>
                     <svg
                       width="24"
@@ -184,7 +185,7 @@
                   </div>
                   Full-time
                 </li>
-                <li class="hero-card-requisites-item">
+                <li class="hero__card-requisites-item">
                   <div>
                     <svg
                       width="24"
@@ -207,14 +208,14 @@
                 </li>
               </ul>
 
-              <ul class="hero-card-tags">
-                <li class="hero-card-tags-item">HTML</li>
-                <li class="hero-card-tags-item">CSS</li>
-                <li class="hero-card-tags-item">JS</li>
-                <li class="hero-card-tags-item">REACT</li>
+              <ul class="hero__card-tags">
+                <li class="hero__card-tags-item">HTML</li>
+                <li class="hero__card-tags-item">CSS</li>
+                <li class="hero__card-tags-item">JS</li>
+                <li class="hero__card-tags-item">REACT</li>
               </ul>
 
-              <button class="hero-card-button-download">
+              <button class="hero__card-button-download">
                 Download CV
                 <svg
                   width="24"
@@ -235,27 +236,27 @@
               </button>
             </div>
 
-            <div class="hero-info">
+            <div class="hero__info">
               <div>
-                <span class="hero-tags"> &lt;h1&gt; </span>
-                <h2 class="hero-info-title">
+                <span class="hero__tags"> &lt;h1&gt; </span>
+                <h2 class="hero__info-title">
                   Hey<br />
-                  I'm <span class="hero-info-name">Yury</span>,<br />Front-End
+                  I'm <span class="hero__info-name">Yury</span>,<br />Front-End
                   Developer
                 </h2>
-                <span class="hero-tags"> &lt;/h1&gt; </span>
+                <span class="hero__tags"> &lt;/h1&gt; </span>
               </div>
 
               <div>
-                <span class="hero-tags"> &lt;p&gt; </span>
-                <p class="hero-info-text">
+                <span class="hero__tags"> &lt;p&gt; </span>
+                <p class="hero__info-text">
                   I help business grow by crafting amazing web experiences. If
                   you’re looking for a developer that likes to get stuff done,
                 </p>
-                <span class="hero-tags"> &lt;p&gt; </span>
-                <div class="hero-info-send">
+                <span class="hero__tags"> &lt;p&gt; </span>
+                <div class="hero__info-send">
                   Let's Talk
-                  <div class="hero-info-send-icon">
+                  <div class="hero__info-send-icon">
                     <svg
                       width="24"
                       height="24"
@@ -275,23 +276,132 @@
               </div>
             </div>
 
-            <div class="hero-highlights">
-              <div class="hero-highlights-item">
+            <div class="hero__highlights">
+              <div class="hero__highlights-item">
                 <span>2</span>
                 <div>Programming Language</div>
               </div>
 
-              <div class="hero-highlights-item">
+              <div class="hero__highlights-item">
                 <span>6</span>
                 <div>Development Tools</div>
               </div>
 
-              <div class="hero-highlights-item">
+              <div class="hero__highlights-item">
                 <span>1</span>
                 <div>Year of experience</div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-me">
+      <div class="container">
+        <div class="about-me__inner">
+          <div class="about-me__info">
+            <h2 class="about-me__title">About Me</h2>
+            <div class="about-me__info__content">
+              <span class="hero__tags"> &lt;p&gt; </span>
+              <div>
+                <h3 class="about-me__info__title">Hello!</h3>
+                <p class="about-me__info__text">
+                  My name is Yury and I specialize in web developement that
+                  utilizes <span class="color-brand-1">HTML</span>,
+                  <span class="color-brand-1">CSS</span>,
+                  <span class="color-brand-1">JS</span>, and
+                  <span class="color-brand-1">REACT</span> etc.<br />
+                  I am a highly motivated individual and eternal optimist
+                  dedicated to writing clear, concise, robust code that works.
+                  Striving to never stop learning and improving. When I'm not
+                  coding, I am writing bolgs, reading, or picking up some new
+                  hands-on art project like photography.<br />
+                  I like to have my perspective and belief systems challenged so
+                  that I see the world through new eyes.
+                </p>
+              </div>
+              <span class="hero__tags"> &lt;/p&gt; </span>
+            </div>
+          </div>
+          <img
+            src="./images/about-me-img.png"
+            alt="about-me"
+            class="about-me__img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="container">
+        <div class="skills__inner">
+          <div class="skills__icon">
+            &lt;/&gt;
+          </div>
+          <h3 class="skills__title">Skills</h3>
+          <p class="skills__subtitle">
+            I am striving to never stop learning and improving
+          </p>
+          <div class="skills__service">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_33_425)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.3333 24.0001H26.6667C28.8758 24.0001 30.6667 22.2092 30.6667 20.0001V6.66675C30.6667 4.45761 28.8758 2.66675 26.6667 2.66675H5.33334C3.1242 2.66675 1.33334 4.45761 1.33334 6.66675V20.0001C1.33334 22.2092 3.1242 24.0001 5.33334 24.0001H14.6667V26.6667H10.6667C9.9303 26.6667 9.33334 27.2637 9.33334 28.0001C9.33334 28.7365 9.9303 29.3334 10.6667 29.3334H21.3333C22.0697 29.3334 22.6667 28.7365 22.6667 28.0001C22.6667 27.2637 22.0697 26.6667 21.3333 26.6667H17.3333V24.0001ZM5.33334 5.33341C4.59696 5.33341 4.00001 5.93037 4.00001 6.66675V20.0001C4.00001 20.7365 4.59696 21.3334 5.33334 21.3334H26.6667C27.4031 21.3334 28 20.7365 28 20.0001V6.66675C28 5.93037 27.4031 5.33341 26.6667 5.33341H5.33334Z"
+                  fill="#292F36"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_33_425">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <div class="skills__service-name">web developement</div>
+            <div class="skills__service-highlights">HTML·CSS·JS·REACT</div>
+          </div>
+          <ul class="skills__highlights">
+            <li class="skills__highlights-item">
+              <img
+                src="./images/icons/icon-html.svg"
+                alt=""
+                class="skills__highlights-item__icon"
+              />
+              <span class="skills__hightlights-html">HTML</span>
+            </li>
+            <li class="skills__highlights-item">
+              <img
+                src="./images/icons/icon-css.svg"
+                alt=""
+                class="skills__highlights-item__icon"
+              />
+              <span class="skills__hightlights-css">CSS</span>
+            </li>
+            <li class="skills__highlights-item">
+              <img
+                src="./images/icons/icon-js.svg"
+                alt=""
+                class="skills__highlights-item__icon"
+              />
+              <span class="skills__hightlights-js">JS</span>
+            </li>
+            <li class="skills__highlights-item">
+              <img
+                src="./images/icons/icon-react.svg"
+                alt=""
+                class="skills__highlights-item__icon"
+              />
+              <span class="skills__hightlights-react">REACT</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
