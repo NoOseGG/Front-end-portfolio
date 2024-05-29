@@ -85,6 +85,26 @@ path {
   color: var(--white);
 }
 
+.header__search {
+  margin-left: auto;
+  margin-right: 64px;
+  padding: 6px 16px;
+  display: flex;
+  background-color: var(--white);
+  border-radius: 16px;
+}
+
+.header__search-input {
+  background-color: var(--white);
+}
+
+.header__search-btn {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu__list {
   display: flex;
   justify-content: space-between;
@@ -207,6 +227,11 @@ path {
   align-items: center;
   background-color: var(--white);
   border-radius: 32px;
+  transition: ease 1s;
+}
+
+.hero__card-button-download:hover {
+  background-color: var(--brand-1);
 }
 
 .hero__card-button-download path {
